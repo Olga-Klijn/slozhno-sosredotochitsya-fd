@@ -9,4 +9,27 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+   --page-bg-color: #000028;
+  --page-bg-image: url(../images/cover-image-dark.png);
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --muted-color: #ff0070;
+  --shadow-color: #ff0070;
+  --corner-color: #ff0070;
+  --card-bg-color: rgba(255, 0, 112, 0.4);
+  --button-border: #ff0070;
+  --button-border-hover: rgba(255, 0, 112, 0.4);
+  --accent-text-color: #000028;
+}
+
+.theme-dark .rec {
+  display: block;
+}
+
+.page {
+  background-image: var(--page-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
