@@ -17,8 +17,7 @@
   --muted-color: #353430;
   --shadow-color: #ff8dcb;
   --corner-color: #353430;
-  --card-bg-color: rgba(255, 141, 203, 0.6);
-  --button-border: #353430;
+   --button-border: #353430;
   --button-border-hover: rgba(53, 52, 48, 0.4);
   --accent-text-color: #353430;
 }
@@ -30,8 +29,6 @@
   color: var(--text-color); /* #353430 */
 }
 
-
-
 @media (prefers-color-scheme: light) {
   :root {
     --page-bg-color: #fff1f7;
@@ -41,8 +38,7 @@
     --title-color: #ffc2e6;
     --muted-color: #353430;
     --shadow-color: #ff8dcb;
-    --corner-color: #353430;
-    --card-bg-color: rgba(255, 141, 203, 0.6);
+    --corner-color: #353430;    
     --button-border: #353430;
     --button-border-hover: rgba(53, 52, 48, 0.4);
     --accent-text-color: #353430;
@@ -51,12 +47,12 @@
   .rec {
     display: none;
   }
+
   .page {
   background-image: var(--page-bg-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  
-}
+  }
 
 }
