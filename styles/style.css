@@ -17,14 +17,14 @@
   display: grid;
   padding: 10px;
   overflow: auto;
-  margin: 0 auto; /*content goes to the center*/
+  margin: 0 auto;
+  /*content goes to the center*/
 }
 
 .card__title {
-  font-weight: 700; 
+  font-weight: 700;
   font-size: inherit;
 }
-
 
 .decorated-zone {
   position: relative;
@@ -227,10 +227,10 @@ a:focus-visible {
 
 /* ------------------------MEDIUM SCREEN------------------------------- */
 @media (min-width: 768px) {
+
   .page {
     padding: 20px;
   }
-
 
   .header,
   .footer {
@@ -341,7 +341,6 @@ a:focus-visible {
     font-weight: 700;
     font-size: var(--header__title-big);
     line-height: 0.83;
-    
   }
 }
 
@@ -407,5 +406,4 @@ a:focus-visible {
   .card__text {
     margin: 0;
   }
-
 }

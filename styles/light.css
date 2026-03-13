@@ -25,8 +25,9 @@
 .theme-light .rec {
   display: none;
 }
+
 .theme-light .header__theme-menu-button {
-  color: var(--text-color); /* #353430 */
+  color: var(--text-color);
 }
 
 @media (prefers-color-scheme: light) {
