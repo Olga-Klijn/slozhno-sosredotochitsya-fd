@@ -47,12 +47,4 @@
   .rec {
     display: none;
   }
-
-  .page {
-  background-image: var(--page-bg-image);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  }
-
 }

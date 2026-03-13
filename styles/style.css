@@ -6,6 +6,10 @@
   margin: 0;
   color: var(--text-color);
   background-color: var(--page-bg-color);
+  background-image: var(--page-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   background-attachment: fixed;
   font-family: var(--font-family);
   font-size: 18px;
@@ -13,11 +17,12 @@
   display: grid;
   padding: 10px;
   overflow: auto;
+  margin: 0 auto; /*content goes to the center*/
 }
 
 .card__title {
-  font-weight: 700;
-  letter-spacing: -0.12rem;
+  font-weight: 700; 
+  font-size: inherit;
 }
 
 
@@ -83,7 +88,7 @@
 .header__theme-menu {
   justify-self: end;
   align-self: start;
-  color: var(--accent-color);
+  /*color: var(--accent-color); removed to default*/
   margin-block-start: 60px;
 }
 
@@ -201,9 +206,9 @@
 .footer__title {
   color: var(--title-color);
   font-weight: 700;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--header__title-small);
   line-height: 0.83;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 a {
@@ -278,10 +283,6 @@ a:focus-visible {
     align-items: start;
   }
 
-  .section__title {
-    max-inline-size: 236px;
-  }
-
   .cards-list {
     grid-column: 2;
   }
@@ -338,9 +339,9 @@ a:focus-visible {
   .footer__title {
     color: var(--title-color);
     font-weight: 700;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: var(--header__title-big);
     line-height: 0.83;
-    text-shadow: 4px 4px 0 var(--accent-color);
+    
   }
 }
 
@@ -381,19 +382,12 @@ a:focus-visible {
     margin-block-start: 4px;
   }
 
-  .section__title {
-    max-inline-size: 315px;
-  }
-
   .cards-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .section_intro .cards-list,
   .section_tips .cards-list {
-    grid-template-columns: 1fr;
-  }
-
-  .section_intro .cards-list {
     grid-template-columns: 1fr;
   }
 
