@@ -10,7 +10,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-attachment: fixed;
   font-family: var(--font-family);
   font-size: 18px;
   line-height: 23.4px;
@@ -88,7 +87,7 @@
 .header__theme-menu {
   justify-self: end;
   align-self: start;
-  /*color: var(--accent-color); removed to default*/
+  color: var(--accent-color);
   margin-block-start: 60px;
 }
 
@@ -104,10 +103,13 @@
   text-transform: lowercase;
   background-color: transparent;
   border: 1px solid transparent;
+  cursor: pointer;
+  color: var(--button-border); 
 }
 
 .header__theme-menu-button:focus-visible {
   border-block-end: 1px solid currentColor;
+  outline: none; 
 }
 
 .header__theme-menu-button:hover {

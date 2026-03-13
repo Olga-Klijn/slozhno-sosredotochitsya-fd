@@ -26,10 +26,6 @@
   display: none;
 }
 
-.theme-light .header__theme-menu-button {
-  color: var(--text-color);
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --page-bg-color: #fff1f7;
